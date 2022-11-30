@@ -1,5 +1,8 @@
-#include "date.h"
+#ifndef EMPRUNT_H
+#define EMPRUNT_H
 
+#include <iostream>
+#include "date.h"
 
 class Emprunt{
 private:
@@ -8,5 +11,6 @@ private:
 	std::string _identifiant;
 public:
 	Emprunt(Date date_emprunt, long int ISBN, std::string identifiant);
-	
 };
+
+#endif

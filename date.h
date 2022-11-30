@@ -1,3 +1,6 @@
+#ifndef DATE_H
+#define DATE_H
+
 class Date{
 private:
 	int _annee;
@@ -10,3 +13,5 @@ public:
 	int get_mois();
 	int get_jours();
 };
+
+#endif
