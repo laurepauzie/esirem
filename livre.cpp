@@ -1,6 +1,27 @@
 #include "livre.h"
+#include <vector>
 
+Livre::Livre(std::string titre,std::string auteur,std::string langue,std::string genre,Date date_publication,int ISBN,std::vector<std::string> liste_emprunteur) : _titre(titre), _auteur(auteur), _langue(langue), _genre(genre), _date_publication(date_publication), _ISBN(ISBN), _liste_emprunteur(liste_emprunteur){
+}
 
-Livre::Livre(std::string titre,std::string auteur,std::string langue,std::string genre,Date date_publication,int ISBN,std::vector<std::string> indentifiant){
-	
+std::string Livre::get_titre(){
+	return _titre;
+}
+std::string Livre::get_auteur(){
+	return _auteur;
+}
+std::string Livre::get_langue(){
+	return _langue;
+}
+std::string Livre::get_genre(){
+	return _genre;
+}
+Date Livre::get_date_publication(){
+	return _date_publication;
+}
+int Livre::get_ISBN(){
+	return _ISBN;
+}
+std::vector<std::string> Livre::get_liste_emprunteur(){
+	return _liste_emprunteur;
 }
