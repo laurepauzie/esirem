@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "livre.h"
-
+#include "bibliotheque.h"
 
 int main()
 {
@@ -13,5 +13,8 @@ int main()
 	std::cout << l1.get_date_publication().get_annee() << std::endl;
 	std::cout << l1.get_liste_emprunteur().at(0) << std::endl;
 	std::cout << l1.get_auteur().get_nom() << std::endl;
+	
+	Bibliotheque  bu();
+
 	return 0;
 }
