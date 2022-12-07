@@ -1,7 +1,11 @@
+#ifndef LECTEUR_H
+#define LECTEUR_H
+
+
 #include <iostream>
 #include <vector>
 
-namespace lecteur{
+//namespace lecteur{
 
 class Lecteur{
 public:
@@ -17,4 +21,5 @@ private:
 	std::vector<long int> _liste_ISBN;
 };
 
-}
+#endif
+//}
