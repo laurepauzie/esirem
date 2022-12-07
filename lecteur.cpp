@@ -23,5 +23,13 @@ std::vector<long int> Lecteur::get_liste_ISBN(){
 void Lecteur::add_ISBN(long int ISBN){
 	_liste_ISBN.push_back(ISBN);
 }
-
+void Lecteur::remove_ISBN(long int ISBN){
+	for (std::vector<long int>::iterator it = _liste_ISBN.begin(); it != _liste_ISBN.end();)
+    {
+        if (*it == ISBN)
+            it = _liste_ISBN.erase(it);
+        else
+            ++it;
+    }
+}
 //}	

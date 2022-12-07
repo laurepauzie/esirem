@@ -23,6 +23,7 @@ public:
 	std::vector<Auteur> get_auteur();
 	std::vector<Lecteur> get_lecteur();
 	void emprunt(Date date_emprunt,Livre& livre_emprunter,Lecteur& lecteur);
+	void restituer(Date date_restitution,Livre& livre_restituer,Lecteur& lecteur);
 };
 
 #endif

@@ -36,3 +36,11 @@ void Bibliotheque::emprunt(Date date_emprunt,Livre& livre_emprunter,Lecteur& lec
 		std::cout << "Le livre demandé n'est pas disponible." << std::endl;
 	}
 }
+void Bibliotheque::restituer(Date date_restitution,Livre& livre_restituer,Lecteur& lecteur){
+	for(int k=0; k<lecteur.get_liste_ISBN().size();++k){
+		if(lecteur.get_liste_ISBN().at(k) == livre_restituer.get_ISBN()){
+			livre_restituer.set_dispo(true);
+			lecteur.remove_ISBN(livre_restituer.get_ISBN());
+		}
+	}
+}

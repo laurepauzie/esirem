@@ -47,7 +47,8 @@ int main()
 	Date emprunt1(7,7,2022);
 	BU.emprunt(emprunt1,VH_Les_Miserables,l1);
 	BU.emprunt(emprunt1,VH_Les_Miserables,l1);
-	
+	Date restitution1(7,8,2022);
+	BU.restituer(restitution1,VH_Les_Miserables,l1);
 	//std::cout << l1.get_liste_ISBN().at(0) << std::endl;
 
 	return 0;

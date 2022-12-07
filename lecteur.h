@@ -16,6 +16,7 @@ public:
 	std::string get_prenom();
 	std::vector<long int> get_liste_ISBN();
 	void add_ISBN(long int ISBN);
+	void remove_ISBN(long int ISBN);
 private: 
 	std::string _identifiant;
 	std::string _nom;
