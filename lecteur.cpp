@@ -16,5 +16,12 @@ std::string Lecteur::get_nom(){
 std::string Lecteur::get_prenom(){
 	return _prenom;
 }
+std::vector<long int> Lecteur::get_liste_ISBN(){
+	return _liste_ISBN;
+}
+
+void Lecteur::add_ISBN(long int ISBN){
+	_liste_ISBN.push_back(ISBN);
+}
 
 //}	

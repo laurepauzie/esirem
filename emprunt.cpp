@@ -2,6 +2,6 @@
 #include "emprunt.h"
 #include "date.h"
 
-Emprunt::Emprunt(Date date_emprunt, long int ISBN, std::string identifiant) : _date_emprunt(date_emprunt), _ISBN(ISBN), _identifiant(identifiant){
+Emprunt::Emprunt(Date date_emprunt, Livre livre_emprunter, std::string identifiant) : _date_emprunt(date_emprunt), _livre_emprunter(livre_emprunter), _identifiant(identifiant){
 
 }

@@ -1,6 +1,7 @@
+#pragma once
+
 #ifndef LECTEUR_H
 #define LECTEUR_H
-
 
 #include <iostream>
 #include <vector>
@@ -13,7 +14,8 @@ public:
 	std::string get_identifiant();
 	std::string get_nom();
 	std::string get_prenom();
-
+	std::vector<long int> get_liste_ISBN();
+	void add_ISBN(long int ISBN);
 private: 
 	std::string _identifiant;
 	std::string _nom;

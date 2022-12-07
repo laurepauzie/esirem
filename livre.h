@@ -1,3 +1,4 @@
+#pragma once
 #ifndef LIVRE_H
 #define LIVRE_H
 
@@ -15,8 +16,9 @@ private:
 	Date _date_publication;
 	long int _ISBN;
 	std::vector<std::string> _liste_emprunteur;
+	bool _dispo;
 public:
-	Livre(std::string titre,Auteur auteur,std::string langue,std::string genre,Date date_publication,long int ISBN,std::vector<std::string> liste_emprunteur);
+	Livre(std::string titre,Auteur auteur,std::string langue,std::string genre,Date date_publication,long int ISBN,std::vector<std::string> liste_emprunteur,bool dispo);
 	std::string get_titre();
 	Auteur get_auteur();
 	std::string get_langue();
@@ -24,6 +26,9 @@ public:
 	Date get_date_publication();
 	long int get_ISBN();
 	std::vector<std::string> get_liste_emprunteur();
+	bool get_dispo();
+	void set_dispo(bool a);
+	void add_emprunteur(std::string identifiant);
 };
 
 #endif

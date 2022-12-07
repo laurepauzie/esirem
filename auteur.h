@@ -1,3 +1,4 @@
+#pragma once
 #ifndef AUTEUR_H
 #define AUTEUR_H
 

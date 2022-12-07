@@ -1,16 +1,18 @@
+#pragma once
 #ifndef EMPRUNT_H
 #define EMPRUNT_H
 
 #include <iostream>
 #include "date.h"
+#include "livre.h"
 
 class Emprunt{
 private:
 	Date _date_emprunt;
-	long int _ISBN;
+	Livre _livre_emprunter;
 	std::string _identifiant;
 public:
-	Emprunt(Date date_emprunt, long int ISBN, std::string identifiant);
+	Emprunt(Date date_emprunt, Livre livre_emprunter, std::string identifiant);
 };
 
 #endif

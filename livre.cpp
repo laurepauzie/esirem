@@ -2,7 +2,7 @@
 #include "auteur.h"
 #include <vector>
 
-Livre::Livre(std::string titre,Auteur auteur,std::string langue,std::string genre,Date date_publication,long int ISBN,std::vector<std::string> liste_emprunteur) : _titre(titre), _auteur(auteur), _langue(langue), _genre(genre), _date_publication(date_publication), _ISBN(ISBN), _liste_emprunteur(liste_emprunteur){
+Livre::Livre(std::string titre,Auteur auteur,std::string langue,std::string genre,Date date_publication,long int ISBN,std::vector<std::string> liste_emprunteur,bool dispo) : _titre(titre), _auteur(auteur), _langue(langue), _genre(genre), _date_publication(date_publication), _ISBN(ISBN), _liste_emprunteur(liste_emprunteur), _dispo(dispo){
 }
 
 std::string Livre::get_titre(){
@@ -25,4 +25,13 @@ long int Livre::get_ISBN(){
 }
 std::vector<std::string> Livre::get_liste_emprunteur(){
 	return _liste_emprunteur;
+}
+bool Livre::get_dispo(){
+	return _dispo;
+}
+void Livre::set_dispo(bool a){
+	_dispo = a;
+}
+void Livre::add_emprunteur(std::string identifiant){
+	_liste_emprunteur.push_back(identifiant);
 }
