@@ -1,5 +1,4 @@
 #pragma once
-
 #ifndef LECTEUR_H
 #define LECTEUR_H
 

@@ -44,4 +44,3 @@ std::ostream& operator<<(std::ostream& os, const Lecteur& lecteur){
 	os << to_display+to_display_ISBN << std::endl;
 	return os;
 }
-//}	

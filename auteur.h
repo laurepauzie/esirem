@@ -19,5 +19,6 @@ public:
 	std::string get_prenom() const;
 	Date get_date_naissance() const;
 };
+std::ostream& operator<<(std::ostream& os, const Auteur& auteur);
 
 #endif

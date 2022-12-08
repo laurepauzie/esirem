@@ -24,3 +24,8 @@ int Date::get_mois() const {
 int Date::get_jours() const {
 	return _jours;
 }
+std::string Date::to_text(){
+	std::string text;
+	text = std::to_string(_jours)+"/"+std::to_string(_mois)+"/"+std::to_string(_annee);
+	return text;
+}
