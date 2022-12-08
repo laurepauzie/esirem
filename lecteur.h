@@ -6,7 +6,6 @@
 #include <iostream>
 #include <vector>
 
-//namespace lecteur{
 
 class Lecteur{
 public:
@@ -27,6 +26,4 @@ private:
 
 std::ostream& operator<<(std::ostream& os, const Lecteur& lecteur);
 
-
 #endif
-//}

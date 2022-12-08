@@ -15,12 +15,12 @@ bool Date::date_valide(int jours,int mois,int annee){
 	if((annee%4 == 0) && (mois == 2) && (jours > 28)) return false;
 	return true;
 }
-int Date::get_annee(){
+int Date::get_annee()  const {
 	return _annee;
 }
-int Date::get_mois(){
+int Date::get_mois() const {
 	return _mois;
 }
-int Date::get_jours(){
+int Date::get_jours() const {
 	return _jours;
 }

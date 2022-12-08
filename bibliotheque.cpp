@@ -8,13 +8,13 @@
 Bibliotheque::Bibliotheque(std::vector<Livre> livres, std::vector<Auteur> auteurs, std::vector<Lecteur> lecteurs): _livres(livres), _auteurs(auteurs), _lecteurs(lecteurs){
 
 }
-std::vector<Livre> Bibliotheque::get_livre(){
+std::vector<Livre> Bibliotheque::get_livre() const {
 	return _livres;
 }
-std::vector<Auteur> Bibliotheque::get_auteur(){
+std::vector<Auteur> Bibliotheque::get_auteur() const {
 	return _auteurs;
 }
-std::vector<Lecteur> Bibliotheque::get_lecteur(){
+std::vector<Lecteur> Bibliotheque::get_lecteur() const {
 	return _lecteurs;
 }
 void Bibliotheque::add_lecteur(Lecteur L1){
@@ -26,7 +26,8 @@ void Bibliotheque::add_auteur(Auteur A){
 void Bibliotheque::add_livre(Livre L2){
 	_livres.push_back(L2);
 }
-void Bibliotheque::emprunt(Date date_emprunt,Livre& livre_emprunter,Lecteur& lecteur){
+
+void Bibliotheque::emprunter(Date date_emprunt,Livre& livre_emprunter,Lecteur& lecteur){
 	if(livre_emprunter.get_dispo()){
 		lecteur.add_ISBN(livre_emprunter.get_ISBN());
 		livre_emprunter.add_emprunteur(lecteur.get_identifiant());

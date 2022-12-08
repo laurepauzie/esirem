@@ -4,15 +4,17 @@
 
 #include <iostream>
 #include "date.h"
-#include "livre.h"
 
 class Emprunt{
 private:
 	Date _date_emprunt;
-	Livre _livre_emprunter;
+	int _ISBN;
 	std::string _identifiant;
 public:
-	Emprunt(Date date_emprunt, Livre livre_emprunter, std::string identifiant);
+	Emprunt(Date date_emprunt, int _ISBN, std::string identifiant);
+	Date get_date_emprunt() const;
+	int get_ISBN() const;
+	std::string get_identifiant() const;
 };
 
 #endif

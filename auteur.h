@@ -14,10 +14,10 @@ private:
 	Date _date_naissance;
 public:
 	Auteur(std::string identifiant_auteur, std::string nom, std::string prenom, Date date_naissance);
-	std::string get_identifiant_auteur();
-	std::string get_nom();
-	std::string get_prenom();
-	Date get_date_naissance();
+	std::string get_identifiant_auteur() const;
+	std::string get_nom() const;
+	std::string get_prenom() const;
+	Date get_date_naissance() const;
 };
 
 #endif

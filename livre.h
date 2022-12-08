@@ -19,14 +19,14 @@ private:
 	bool _dispo;
 public:
 	Livre(std::string titre,Auteur auteur,std::string langue,std::string genre,Date date_publication,long int ISBN,std::vector<std::string> liste_emprunteur,bool dispo);
-	std::string get_titre();
-	Auteur get_auteur();
-	std::string get_langue();
-	std::string get_genre();
-	Date get_date_publication();
-	long int get_ISBN();
-	std::vector<std::string> get_liste_emprunteur();
-	bool get_dispo();
+	std::string get_titre() const;
+	Auteur get_auteur() const;
+	std::string get_langue() const;
+	std::string get_genre() const;
+	Date get_date_publication() const;
+	long int get_ISBN() const;
+	std::vector<std::string> get_liste_emprunteur() const;
+	bool get_dispo() const;
 	void set_dispo(bool a);
 	void add_emprunteur(std::string identifiant);
 };
