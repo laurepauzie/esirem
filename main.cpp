@@ -11,9 +11,9 @@ int main()
 	Date date_vh(26,2,1802);
 	Auteur VH("Vhugo","Hugo","Victor",date_vh);
 	Date date_ac(7,11,1913);
-	Auteur AC("Acamus","Albert","Camus",date_ac);
+	Auteur AC("Acamus","Camus","Albert",date_ac);
 	Date date_ez(2,4,1902);
-	Auteur EZ("Ezola","Emile","Zola",date_ez);
+	Auteur EZ("Ezola","Zola","Emile",date_ez);
 	std::vector<Auteur> auteurs = {VH,AC,EZ};
 
 	std::vector<long int> liste_l1 = {};
@@ -66,6 +66,9 @@ int main()
 	
 	std::cout << l1;
 	std::cout << VH_Les_Miserables;
+
+	BU.chercherLivresAvecAuteur(VH);
+
 
 	return 0;
 }

@@ -45,3 +45,11 @@ void Bibliotheque::restituer(Date date_restitution,Livre& livre_restituer,Lecteu
 		}
 	}
 }
+void Bibliotheque::chercherLivresAvecAuteur(Auteur auteur) const {
+	std::cout << "Les livres de " << auteur.get_nom() << " que la bibliothèque possède sont : "  << std::endl;
+	for(Livre k:_livres){
+		if(k.get_auteur().get_nom()==auteur.get_nom()){
+			std::cout << "   " << k.get_titre() << std::endl;
+		}
+	}
+}

@@ -25,6 +25,7 @@ public:
 	std::vector<Lecteur> get_lecteur() const;
 	void emprunter(Date date_emprunt,Livre& livre_emprunter,Lecteur& lecteur);
 	void restituer(Date date_restitution,Livre& livre_restituer,Lecteur& lecteur);
+	void chercherLivresAvecAuteur(Auteur auteur) const;
 };
 
 #endif
