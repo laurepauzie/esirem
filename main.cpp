@@ -39,7 +39,6 @@ int main()
 	Livre EZ_J_accuse("J'accuse... !",EZ,"Français","Roman",publi_j_accuse,9788453489420,emprunteur,true);
 	Date publi_l_etranger(1,1,1942);
 	Livre AC_L_etranger("L'étranger",AC,"Français","Roman",publi_l_etranger,9788415607845,emprunteur,true);
-	
 	std::vector<Livre> livres = {VH_Les_Miserables,VH_Les_Contemplations,VH_Notre_Dame_de_Paris,VH_Poemes_de_Victor_Hugo,EZ_Germinal,EZ_Nana,EZ_J_accuse};
 	
 	Bibliotheque BU(livres,auteurs,lecteurs);
@@ -47,14 +46,24 @@ int main()
 
 	Date date_emprunt1(7,7,2022);
 	BU.emprunter(date_emprunt1,VH_Les_Miserables,l1);
+	
+	Date date_emprunt3(7,7,2022);
+	BU.emprunter(date_emprunt3,EZ_Germinal,l1);
+	std::cout << l1;
+	Date date_emprunt4(9,7,2022);
+	BU.emprunter(date_emprunt4,EZ_Germinal,l2);
+	Date date_restitution3(15,7,2022);
+	BU.restituer(date_restitution3,EZ_Germinal,l1);
+	
 	Date date_restitution1(7,8,2022);
 	BU.restituer(date_restitution1,VH_Les_Miserables,l1);
-	
+
 	Date date_emprunt2(8,8,2022);
 	BU.emprunter(date_emprunt2,VH_Les_Miserables,l2);
+	
 	Date date_restitution2(12,8,2022);
-	BU.restituer(date_restitution2,VH_Les_Miserables,l1);
-
+	BU.restituer(date_restitution2,VH_Les_Miserables,l1);	
+	
 	std::cout << l1;
 	std::cout << VH_Les_Miserables;
 

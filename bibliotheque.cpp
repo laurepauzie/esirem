@@ -34,7 +34,7 @@ void Bibliotheque::emprunter(Date date_emprunt,Livre& livre_emprunter,Lecteur& l
 		livre_emprunter.set_dispo(false);
 	}
 	else{
-		std::cout << "Le livre demandé n'est pas disponible." << std::endl;
+		std::cout << "Le livre demandé n'est pas disponible (" << livre_emprunter.get_titre() << ")." << std::endl;
 	}
 }
 void Bibliotheque::restituer(Date date_restitution,Livre& livre_restituer,Lecteur& lecteur){
