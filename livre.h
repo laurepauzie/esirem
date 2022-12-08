@@ -31,4 +31,6 @@ public:
 	void add_emprunteur(std::string identifiant);
 };
 
+std::ostream& operator<<(std::ostream& os, const Livre& livre);
+
 #endif

@@ -35,3 +35,18 @@ void Livre::set_dispo(bool a){
 void Livre::add_emprunteur(std::string identifiant){
 	_liste_emprunteur.push_back(identifiant);
 }
+
+std::ostream& operator<<(std::ostream& os, const Livre& livre){
+	os << std::endl;
+	os << "Titre du livre : " << livre.get_titre() << std::endl;
+	os << "Auteur : " << livre.get_auteur();
+	os << "Date de publication : " << livre.get_date_publication().to_text() << std::endl;
+	os << "Genre : " << livre.get_genre() << std::endl;
+	os << "Langue originale : " << livre.get_langue() << std::endl;
+	os << "Identifiant des anciens emprunteurs : ";
+	for(std::string k : livre.get_liste_emprunteur()){
+		os << k << " ,";
+	}
+	os << std::endl;
+	return os;
+}

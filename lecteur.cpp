@@ -36,7 +36,7 @@ void Lecteur::remove_ISBN(long int ISBN){
 std::ostream& operator<<(std::ostream& os, const Lecteur& lecteur){
 	std::string to_display;
 	to_display = lecteur.get_nom() + " " + lecteur.get_prenom();
-	to_display += " a pour indentifiant "+ lecteur.get_identifiant() + " et cette personne a emprunté le(s) livre(s) avec l'ISBN suivants: ";
+	to_display += " doit retourné(e) le(s) livre(s) avec l'ISBN suivants: ";
 	std::string to_display_ISBN="";
 	for(long int k : lecteur.get_liste_ISBN()){
 		to_display_ISBN += std::to_string(k) + " ,";

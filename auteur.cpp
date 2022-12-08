@@ -18,10 +18,8 @@ Date Auteur::get_date_naissance() const {
 }
 std::ostream& operator<<(std::ostream& os, const Auteur& auteur){
 	std::string to_display;
-	to_display = auteur.get_nom() + " " + auteur.get_prenom();
-	to_display += " qui est né le "+ auteur.get_date_naissance().to_text();
-	to_display += " a pour identifiant : " + auteur.get_identifiant_auteur();
-	
+	to_display = auteur.get_prenom() + " " + auteur.get_nom();
+	to_display += ", né le "+ auteur.get_date_naissance().to_text();
 	os << to_display<< std::endl;
 	return os;
 }

@@ -47,12 +47,16 @@ int main()
 
 	Date date_emprunt1(7,7,2022);
 	BU.emprunter(date_emprunt1,VH_Les_Miserables,l1);
-	Date date_emprunt2(8,7,2022);
-	BU.restituer(date_emprunt2,VH_Les_Miserables,l2);
 	Date date_restitution1(7,8,2022);
-	//BU.restituer(date_restitution1,VH_Les_Miserables,l1);
+	BU.restituer(date_restitution1,VH_Les_Miserables,l1);
+	
+	Date date_emprunt2(8,8,2022);
+	BU.emprunter(date_emprunt2,VH_Les_Miserables,l2);
+	Date date_restitution2(12,8,2022);
+	BU.restituer(date_restitution2,VH_Les_Miserables,l1);
+
 	std::cout << l1;
-	std::cout << AC;
+	std::cout << VH_Les_Miserables;
 
 	return 0;
 }
