@@ -31,10 +31,9 @@ void Bibliotheque::emprunter(Date date_emprunt,Livre& livre_emprunter,Lecteur& l
 	if(livre_emprunter.get_dispo()){
 		lecteur.add_ISBN(livre_emprunter.get_ISBN());
 		livre_emprunter.add_emprunteur(lecteur.get_identifiant());
-		livre_emprunter.set_dispo(false);
 	}
 	else{
-		std::cout << "Le livre demandé n'est pas disponible (" << livre_emprunter.get_titre() << ")." << std::endl;
+		std::cout << "Le livre demandé n'est pas disponible (" << livre_emprunter.get_titre() << ").\n";
 	}
 }
 void Bibliotheque::restituer(Date date_restitution,Livre& livre_restituer,Lecteur& lecteur){
@@ -46,7 +45,7 @@ void Bibliotheque::restituer(Date date_restitution,Livre& livre_restituer,Lecteu
 	}
 }
 void Bibliotheque::chercherLivresAvecAuteur(Auteur auteur) const {
-	std::cout << "Les livres de " << auteur.get_nom() << " que la bibliothèque possède sont : "  << std::endl;
+	std::cout << "Les livres de " << auteur.get_nom() << " que la bibliothèque possède sont : \n";
 	for(Livre k:_livres){
 		if(k.get_auteur().get_nom()==auteur.get_nom()){
 			std::cout << "   " << k.get_titre() << std::endl;

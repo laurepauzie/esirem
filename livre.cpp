@@ -35,6 +35,7 @@ void Livre::set_dispo(bool a){
 }
 void Livre::add_emprunteur(std::string identifiant){
 	_liste_emprunteur.push_back(identifiant);
+	_dispo=false;
 }
 
 std::ostream& operator<<(std::ostream& os, const Livre& livre){
