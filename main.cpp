@@ -24,21 +24,21 @@ int main()
 
 	std::vector<std::string> emprunteur = {};
 	Date publi_les_miserable(17,5,1892);
-	Livre VH_Les_Miserables("Les Misérables",VH,"Français","Roman",publi_les_miserable,9780453009669,emprunteur,true);
+	Livre VH_Les_Miserables("Les Misérables",VH,"Français","Roman",publi_les_miserable,9780453009669,emprunteur);
 	Date publi_les_contemplations(1,1,1856);
-	Livre VH_Les_Contemplations("Les Contemplations",VH,"Français","Poésie",publi_les_contemplations,9780453009520,emprunteur,true);
+	Livre VH_Les_Contemplations("Les Contemplations",VH,"Français","Poésie",publi_les_contemplations,9780453009520,emprunteur);
 	Date publi_notre_dame_de_paris(16,3,1856);
-	Livre VH_Notre_Dame_de_Paris("Notre Dame de Paris",VH,"Français","Roman",publi_notre_dame_de_paris,9780453009604,emprunteur,true);
+	Livre VH_Notre_Dame_de_Paris("Notre Dame de Paris",VH,"Français","Roman",publi_notre_dame_de_paris,9780453009604,emprunteur);
 	Date publi_poemes_de_victor_hugo(1,1,1830);
-	Livre VH_Poemes_de_Victor_Hugo("Poèmes de Victor Hugo",VH,"Français","Poésie",publi_poemes_de_victor_hugo,9780453009702,emprunteur,true);
+	Livre VH_Poemes_de_Victor_Hugo("Poèmes de Victor Hugo",VH,"Français","Poésie",publi_poemes_de_victor_hugo,9780453009702,emprunteur);
 	Date publi_germinal(1,1,1885);
-	Livre EZ_Germinal("Germinal",EZ,"Français","Roman",publi_germinal,9788453489504,emprunteur,true);
+	Livre EZ_Germinal("Germinal",EZ,"Français","Roman",publi_germinal,9788453489504,emprunteur);
 	Date publi_nana(5,2,1880);
-	Livre EZ_Nana("Nana",EZ,"Français","Roman",publi_nana,9788453489984,emprunteur,true);
+	Livre EZ_Nana("Nana",EZ,"Français","Roman",publi_nana,9788453489984,emprunteur);
 	Date publi_j_accuse(13,1,1898);
-	Livre EZ_J_accuse("J'accuse... !",EZ,"Français","Roman",publi_j_accuse,9788453489420,emprunteur,true);
+	Livre EZ_J_accuse("J'accuse... !",EZ,"Français","Roman",publi_j_accuse,9788453489420,emprunteur);
 	Date publi_l_etranger(1,1,1942);
-	Livre AC_L_etranger("L'étranger",AC,"Français","Roman",publi_l_etranger,9788415607845,emprunteur,true);
+	Livre AC_L_etranger("L'étranger",AC,"Français","Roman",publi_l_etranger,9788415607845,emprunteur);
 	std::vector<Livre> livres = {VH_Les_Miserables,VH_Les_Contemplations,VH_Notre_Dame_de_Paris,VH_Poemes_de_Victor_Hugo,EZ_Germinal,EZ_Nana,EZ_J_accuse};
 	
 	Bibliotheque BU(livres,auteurs,lecteurs);

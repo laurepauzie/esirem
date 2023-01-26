@@ -18,7 +18,7 @@ private:
 	std::vector<std::string> _liste_emprunteur;
 	bool _dispo;
 public:
-	Livre(std::string titre,Auteur auteur,std::string langue,std::string genre,Date date_publication,long int ISBN,std::vector<std::string> liste_emprunteur,bool dispo);
+	Livre(std::string titre,Auteur auteur,std::string langue,std::string genre,Date date_publication,long int ISBN,std::vector<std::string> liste_emprunteur);
 	std::string get_titre() const;
 	Auteur get_auteur() const;
 	std::string get_langue() const;

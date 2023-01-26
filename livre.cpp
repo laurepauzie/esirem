@@ -2,7 +2,8 @@
 #include "auteur.h"
 #include <vector>
 
-Livre::Livre(std::string titre,Auteur auteur,std::string langue,std::string genre,Date date_publication,long int ISBN,std::vector<std::string> liste_emprunteur,bool dispo) : _titre(titre), _auteur(auteur), _langue(langue), _genre(genre), _date_publication(date_publication), _ISBN(ISBN), _liste_emprunteur(liste_emprunteur), _dispo(dispo){
+Livre::Livre(std::string titre,Auteur auteur,std::string langue,std::string genre,Date date_publication,long int ISBN,std::vector<std::string> liste_emprunteur) : _titre(titre), _auteur(auteur), _langue(langue), _genre(genre), _date_publication(date_publication), _ISBN(ISBN), _liste_emprunteur(liste_emprunteur){
+_dispo = true;
 }
 
 std::string Livre::get_titre() const {
